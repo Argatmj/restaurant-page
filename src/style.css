@@ -83,3 +83,36 @@ ul li {
 p {
     margin-bottom: 12px;
 }
+
+.menu-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    grid-auto-rows: 310px;
+    gap: 42px;
+    padding: 16px 220px;
+}
+
+.card {
+    background-color: var(--bg-clr);
+    color: var(--font-clr);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 16px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 18px;
+}
+.pic {
+    width: 100%; 
+    height: 220px; 
+    overflow: hidden; 
+    border-radius: 10px; 
+}
+.pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
